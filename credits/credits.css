@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: shadow;
+    src: url("../src/ShadowsIntoLight-Regular.ttf");
+}
+
+/* Spacing */
+body {
+    padding: 2vh 5vw;
+}
+
+header {
+    margin-bottom: 4vh;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1vh;
+}
+
+header h2 {
+    margin-bottom: 2vh;
+}
+
+nav {
+    margin-bottom: 4vh;
+}
+
+nav ul li {
+    margin: 0 2vw;
+}
+
+footer {
+    margin-top: 6vh;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    margin-left: 0.5vw;
+}
+
+/* Text Formatting */
+header h1 {
+    font: bold calc(10px + 3vw) shadow, monospace;
+    text-align: center;
+}
+
+header h2 {
+    font: bold calc(8px + 2vw) shadow, monospace;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 2vw;
+}
+
+nav ul li a {
+    font: calc(12px + 0.8vw) serif;
+    text-align: center;
+}
+
+footer {
+    font: calc(10px + 0.9vw) serif;
+    text-align: center;
+}
+
+footer a {
+    font: calc(10px + 0.9vw) serif;
+}
+
+/* Color */
+body {
+    background-color: #fbf4dd;
+}
+
+/* Nav */
+nav ul li a {
+    display: inline-block;
+    padding: 0.8vh 1.5vw;
+    border-radius: 1vh;
+    text-decoration: none;
+    color: blue;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f0e6c8; /* slightly darker/lighter calm shade */
+    color: #333; /* darker text on hover */
+}
+
+/* Credits Style */
+main h2 {
+    text-align: center;
+    font: bold calc(8px + 2vw) serif;
+    margin-bottom: 2vh;
+}
+
+main p {
+    font: calc(10px + 1vw) serif;
+    margin-bottom: 1.5vh;
+    padding-left: 3vw;
+    text-indent: -2vw;
+}
+
+.italicize {
+    font-style: italic;
+}
