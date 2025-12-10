@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: shadow;
+    src: url("src/ShadowsIntoLight-Regular.ttf");
+}
+
+/* Main content area */
+#main-content {
+    position: relative;         /* anchor */
+    width: 100%;
+    max-width: 80vw;           /* keeps layout manageable */
+    margin: 0 auto;
+}
+
+#main-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* General styles for the 5 boxes */
+#main-content > div {
+    position: absolute;
+    width: 18vw;                /* fixed size */
+    height: 10vh;
+    background: orange;      /* sky blue color */
+    border-radius: 12px;
+    opacity: 0.8;
+    border: 2px solid black;
+    transition: opacity 0.2s;
+}
+
+#main-content > div:hover {
+    opacity: 1;
+}
+
+/* Diagonal placement: */
+#section1 {
+    bottom: 12%;      /* near bottom-left */
+    left: 17%;
+}
+
+#section2 {
+    bottom: 27%;
+    left: 27%;
+}
+
+#section3 {
+    bottom: 42%;
+    left: 37%;
+}
+
+#section4 {
+    bottom: 57%;
+    left: 47%;
+}
+
+#section5 {
+    bottom: 72%;     /* near top-right */
+    left: 57%;
+}
+
+/* Spacing */
+body {
+    padding: 2vh 5vw;
+}
+
+header {
+    margin-bottom: 4vh;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1vh;
+}
+
+header h2 {
+    margin-bottom: 2vh;
+}
+
+nav {
+    margin-bottom: 4vh;
+}
+
+nav ul li {
+    margin: 0 2vw;
+}
+
+#main-content > div p {
+    margin: 0;
+    padding: 1vh 1vw;
+}
+
+#detail-section1,
+#detail-section2,
+#detail-section3,
+#detail-section4,
+#detail-section5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4vh 0;
+}
+
+.detail-box {
+    padding: 2vh 2vw;
+    margin: 1vh 0;
+    min-width: 40vw;
+}
+
+.detail-box h3 {
+    margin-bottom: 1vh;
+    text-align: center;
+}
+
+.detail-box ul {
+    padding-left: 2vw;
+    margin-bottom: 1vh;
+}
+
+.detail-box p {
+    margin-top: 1vh;
+}
+
+.detail-box input[type="text"] {
+    width: 95%;
+    padding: 1vh 1vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    background-color: #fefbf0;
+}
+
+footer {
+    margin-top: 6vh;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    margin-left: 0.5vw;
+}
+
+/* Text Formatting */
+header h1 {
+    font: bold calc(10px + 3vw) shadow, monospace;
+    text-align: center;
+}
+
+header h2 {
+    font: bold calc(8px + 2vw) shadow, monospace;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 2vw;
+}
+
+nav ul li a {
+    font: calc(12px + 0.8vw) serif;
+    text-align: center;
+}
+
+#main-content > div p {
+    font: calc(10px + 0.8vw) serif;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    padding: 1vh 1vw;
+}
+
+.detail-box h3 {
+    font: bold calc(10px + 1.5vw) serif;
+    text-align: center;
+}
+
+.detail-box p,
+.detail-box ul {
+    font: calc(10px + 1vw) serif;
+}
+
+.detail-box ul li {
+    margin-bottom: 0.5vh;
+}
+
+.detail-box label {
+    font: calc(10px + 0.9vw) serif;
+}
+
+.detail-box input[type="text"] {
+    font: calc(10px + 0.9vw) serif;
+}
+
+footer {
+    font: calc(10px + 0.9vw) serif;
+    text-align: center;
+}
+
+footer a {
+    font: calc(10px + 0.9vw) serif;
+}
+
+/* Detail Boxes */
+#detail-section1,
+#detail-section2,
+#detail-section3,
+#detail-section4,
+#detail-section5 {
+    display: none;
+}
+
+.detail-box {
+    flex: 1 1 45%; /* two boxes per row by default, adjust for more if needed */
+    border: 0.2vh solid black;
+    border-radius: 1vh;
+    padding: 2% 2%;
+    box-sizing: border-box;
+    min-width: 40%; /* ensures boxes stay proportional */
+    max-width: 48%;
+    margin-bottom: 2vh;
+}
+
+/* Color */
+body {
+    background-color: #fbf4dd;
+}
+
+/* Nav */
+nav ul li a {
+    display: inline-block;
+    padding: 0.8vh 1.5vw;
+    border-radius: 1vh;
+    text-decoration: none;
+    color: blue;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f0e6c8; /* slightly darker/lighter calm shade */
+    color: #333; /* darker text on hover */
+}
