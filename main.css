@@ -254,3 +254,8 @@ nav ul li a:hover {
     background-color: #f0e6c8; /* slightly darker/lighter calm shade */
     color: #333; /* darker text on hover */
 }
+
+/* Semester 2 */
+.semtwo {
+    color: #1b5e20; /* dark green */
+}
